@@ -7,14 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90C82A31D773DA400C9643B /* Rides.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C82A21D773DA400C9643B /* Rides.swift */; };
 		D948125A1D65C5CE00368CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94812591D65C5CE00368CA6 /* AppDelegate.swift */; };
 		D948125C1D65C5CE00368CA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D948125B1D65C5CE00368CA6 /* ViewController.swift */; };
 		D948125F1D65C5CE00368CA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D948125D1D65C5CE00368CA6 /* Main.storyboard */; };
 		D94812611D65C5CE00368CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94812601D65C5CE00368CA6 /* Assets.xcassets */; };
 		D94812641D65C5CE00368CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94812621D65C5CE00368CA6 /* LaunchScreen.storyboard */; };
+		D94812721D65C64A00368CA6 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94812711D65C64A00368CA6 /* IntentHandler.swift */; };
+		D948127B1D65C64A00368CA6 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D948127A1D65C64A00368CA6 /* IntentsUI.framework */; };
+		D948127E1D65C64A00368CA6 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D948127D1D65C64A00368CA6 /* IntentViewController.swift */; };
+		D94812811D65C64A00368CA6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D948127F1D65C64A00368CA6 /* MainInterface.storyboard */; };
+		D94812851D65C64A00368CA6 /* TravellerIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D94812781D65C64A00368CA6 /* TravellerIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D94812881D65C64A00368CA6 /* TravellerIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D948126F1D65C64A00368CA6 /* TravellerIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D99E01981D65D2F200BFE16C /* RideStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E01971D65D2F200BFE16C /* RideStatus.swift */; };
+		D99E01991D65DA4C00BFE16C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94812601D65C5CE00368CA6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D94812831D65C64A00368CA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D948124E1D65C5CD00368CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D94812771D65C64A00368CA6;
+			remoteInfo = TravellerIntentUI;
+		};
+		D94812861D65C64A00368CA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D948124E1D65C5CD00368CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D948126E1D65C64A00368CA6;
+			remoteInfo = TravellerIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D948128F1D65C64A00368CA6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D94812881D65C64A00368CA6 /* TravellerIntent.appex in Embed App Extensions */,
+				D94812851D65C64A00368CA6 /* TravellerIntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94812A11D65C70C00368CA6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D90C82A21D773DA400C9643B /* Rides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rides.swift; sourceTree = "<group>"; };
 		D94812561D65C5CD00368CA6 /* Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traveller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94812591D65C5CE00368CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D948125B1D65C5CE00368CA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +74,15 @@
 		D94812601D65C5CE00368CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D94812631D65C5CE00368CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94812651D65C5CE00368CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D948126F1D65C64A00368CA6 /* TravellerIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TravellerIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94812711D65C64A00368CA6 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		D94812731D65C64A00368CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94812781D65C64A00368CA6 /* TravellerIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TravellerIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D948127A1D65C64A00368CA6 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		D948127D1D65C64A00368CA6 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		D94812801D65C64A00368CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D94812821D65C64A00368CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99E01971D65D2F200BFE16C /* RideStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +93,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D948126C1D65C64A00368CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94812751D65C64A00368CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D948127B1D65C64A00368CA6 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				D94812581D65C5CD00368CA6 /* Traveller */,
+				D94812701D65C64A00368CA6 /* TravellerIntent */,
+				D948127C1D65C64A00368CA6 /* TravellerIntentUI */,
+				D94812791D65C64A00368CA6 /* Frameworks */,
 				D94812571D65C5CD00368CA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				D94812561D65C5CD00368CA6 /* Traveller.app */,
+				D948126F1D65C64A00368CA6 /* TravellerIntent.appex */,
+				D94812781D65C64A00368CA6 /* TravellerIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +145,35 @@
 			path = Traveller;
 			sourceTree = "<group>";
 		};
+		D94812701D65C64A00368CA6 /* TravellerIntent */ = {
+			isa = PBXGroup;
+			children = (
+				D94812711D65C64A00368CA6 /* IntentHandler.swift */,
+				D99E01971D65D2F200BFE16C /* RideStatus.swift */,
+				D90C82A21D773DA400C9643B /* Rides.swift */,
+				D94812731D65C64A00368CA6 /* Info.plist */,
+			);
+			path = TravellerIntent;
+			sourceTree = "<group>";
+		};
+		D94812791D65C64A00368CA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D948127A1D65C64A00368CA6 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D948127C1D65C64A00368CA6 /* TravellerIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				D948127D1D65C64A00368CA6 /* IntentViewController.swift */,
+				D948127F1D65C64A00368CA6 /* MainInterface.storyboard */,
+				D94812821D65C64A00368CA6 /* Info.plist */,
+			);
+			path = TravellerIntentUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +184,53 @@
 				D94812521D65C5CD00368CA6 /* Sources */,
 				D94812531D65C5CD00368CA6 /* Frameworks */,
 				D94812541D65C5CD00368CA6 /* Resources */,
+				D948128F1D65C64A00368CA6 /* Embed App Extensions */,
+				D94812A11D65C70C00368CA6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D94812841D65C64A00368CA6 /* PBXTargetDependency */,
+				D94812871D65C64A00368CA6 /* PBXTargetDependency */,
 			);
 			name = Traveller;
 			productName = Traveller;
 			productReference = D94812561D65C5CD00368CA6 /* Traveller.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D948126E1D65C64A00368CA6 /* TravellerIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D948128C1D65C64A00368CA6 /* Build configuration list for PBXNativeTarget "TravellerIntent" */;
+			buildPhases = (
+				D948126B1D65C64A00368CA6 /* Sources */,
+				D948126C1D65C64A00368CA6 /* Frameworks */,
+				D948126D1D65C64A00368CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravellerIntent;
+			productName = TravellerIntent;
+			productReference = D948126F1D65C64A00368CA6 /* TravellerIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D94812771D65C64A00368CA6 /* TravellerIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D94812891D65C64A00368CA6 /* Build configuration list for PBXNativeTarget "TravellerIntentUI" */;
+			buildPhases = (
+				D94812741D65C64A00368CA6 /* Sources */,
+				D94812751D65C64A00368CA6 /* Frameworks */,
+				D94812761D65C64A00368CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravellerIntentUI;
+			productName = TravellerIntentUI;
+			productReference = D94812781D65C64A00368CA6 /* TravellerIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +243,16 @@
 				ORGANIZATIONNAME = Jayway;
 				TargetAttributes = {
 					D94812551D65C5CD00368CA6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7XT7RQW894;
+						ProvisioningStyle = Automatic;
+					};
+					D948126E1D65C64A00368CA6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7XT7RQW894;
+						ProvisioningStyle = Automatic;
+					};
+					D94812771D65C64A00368CA6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7XT7RQW894;
 						ProvisioningStyle = Automatic;
@@ -115,6 +273,8 @@
 			projectRoot = "";
 			targets = (
 				D94812551D65C5CD00368CA6 /* Traveller */,
+				D948126E1D65C64A00368CA6 /* TravellerIntent */,
+				D94812771D65C64A00368CA6 /* TravellerIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +290,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D948126D1D65C64A00368CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99E01991D65DA4C00BFE16C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94812761D65C64A00368CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94812811D65C64A00368CA6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +318,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D948126B1D65C64A00368CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94812721D65C64A00368CA6 /* IntentHandler.swift in Sources */,
+				D99E01981D65D2F200BFE16C /* RideStatus.swift in Sources */,
+				D90C82A31D773DA400C9643B /* Rides.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D94812741D65C64A00368CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D948127E1D65C64A00368CA6 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D94812841D65C64A00368CA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D94812771D65C64A00368CA6 /* TravellerIntentUI */;
+			targetProxy = D94812831D65C64A00368CA6 /* PBXContainerItemProxy */;
+		};
+		D94812871D65C64A00368CA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D948126E1D65C64A00368CA6 /* TravellerIntent */;
+			targetProxy = D94812861D65C64A00368CA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D948125D1D65C5CE00368CA6 /* Main.storyboard */ = {
@@ -159,6 +366,14 @@
 				D94812631D65C5CE00368CA6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D948127F1D65C64A00368CA6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D94812801D65C64A00368CA6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +473,7 @@
 		D94812691D65C5CE00368CA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7XT7RQW894;
 				INFOPLIST_FILE = Traveller/Info.plist;
@@ -271,12 +487,65 @@
 		D948126A1D65C5CE00368CA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7XT7RQW894;
 				INFOPLIST_FILE = Traveller/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayway.Traveller;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D948128A1D65C64A00368CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7XT7RQW894;
+				INFOPLIST_FILE = TravellerIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayway.Traveller.TravellerIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D948128B1D65C64A00368CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7XT7RQW894;
+				INFOPLIST_FILE = TravellerIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayway.Traveller.TravellerIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D948128D1D65C64A00368CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7XT7RQW894;
+				INFOPLIST_FILE = TravellerIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayway.Traveller.TravellerIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D948128E1D65C64A00368CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7XT7RQW894;
+				INFOPLIST_FILE = TravellerIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayway.Traveller.TravellerIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +569,25 @@
 				D948126A1D65C5CE00368CA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D94812891D65C64A00368CA6 /* Build configuration list for PBXNativeTarget "TravellerIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D948128A1D65C64A00368CA6 /* Debug */,
+				D948128B1D65C64A00368CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D948128C1D65C64A00368CA6 /* Build configuration list for PBXNativeTarget "TravellerIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D948128D1D65C64A00368CA6 /* Debug */,
+				D948128E1D65C64A00368CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
